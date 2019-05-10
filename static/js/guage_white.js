@@ -4,7 +4,7 @@ if (pred_white === 'Poor Wine') {
   level = 45;
 }
 else if (pred_white === 'Average Wine'){
-    level = 90;
+    level = 100;
   }
   
 else level = 135;
