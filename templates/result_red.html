@@ -1,0 +1,16 @@
+<!doctype html>
+<html>
+    <head>
+            <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+    </head>
+   <body>
+       <h1> {{ prediction_red }}</h1>
+       <div class="row margin-top-10">
+            <div class="col-md-6 col-sm-12 margin-top-10">
+                <script>var pred_red =  '{{ prediction_red }}'</script> 
+                <div id="RedDiv" class="col-md-6"><!-- Plotly chart will be drawn inside this DIV --></div>
+                <script src="{{ url_for('static', filename='js/guage_red.js') }}"></script>
+            </div>
+          </div>
+   </body>
+</html>
