@@ -17,7 +17,7 @@ def index():
 #prediction function for red wine
 def Red_ValuePredictor(to_predict_list):
     to_predict = np.array(to_predict_list).reshape(1,6)
-    loaded_model = pickle.load(open("tuned_redmodel.pkl","rb"))
+    loaded_model = pickle.load(open("model/tuned_redmodel.pkl","rb"))
     result = loaded_model.predict(to_predict)
     return result[0]
     
@@ -25,11 +25,11 @@ def Red_ValuePredictor(to_predict_list):
 #prediction function for white wine
 def White_ValuePredictor(to_predict_list):
     to_predict = np.array(to_predict_list).reshape(1,5)
-    loaded_model = pickle.load(open("tuned_whitemodel.pkl","rb"))
+    loaded_model = pickle.load(open("model/tuned_whitemodel.pkl","rb"))
     result = loaded_model.predict(to_predict)
     return result[0]
     
-
+#Create route to display prediction for red wine
 @app.route('/result_red',methods = ['POST'])
 def result_red():
     if request.method == 'POST':
@@ -48,6 +48,7 @@ def result_red():
             
         return render_template("result_red.html",prediction_red=prediction)
 
+#Create route to display prediction for white wine
 @app.route('/result_white',methods = ['POST'])
 def result_white():
     if request.method == 'POST':
