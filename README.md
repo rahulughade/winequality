@@ -28,7 +28,7 @@ From your web browser, navigate to (http://localhost:5000/) to launch the app.
 
 [Heroku link](https://thawing-wildwood-93546.herokuapp.com/)
 
-## Authors
+## Citations
 
 * **P. Cortez, A. Cerdeira, F. Almeida, T. Matos and J. Reis**. 
 *Modeling wine preferences by data mining from physicochemical properties. In Decision Support Systems, Elsevier, 47(4):547-553, 2009.* - [ReadMore](http://www3.dsi.uminho.pt/pcortez/wine/)
